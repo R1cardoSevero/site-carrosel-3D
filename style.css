@@ -1,0 +1,184 @@
+@charset "utf-8";
+@font-face {
+    font-family: font1;
+    src: url(Minecrafter.Alt.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: font1;
+}
+
+body{
+    background-color: antiquewhite;
+    font-family: sans-serif;
+    color: black;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4faaae78-5aa4-4305-b9c9-21d6dca10808/deir147-55399c2c-2229-44da-925c-a0245dbff4ea.png/v1/fill/w_1280,h_720,q_80,strp/minecraft_wallpaper_4_by_fenrate_deir147-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvNGZhYWFlNzgtNWFhNC00MzA1LWI5YzktMjFkNmRjYTEwODA4XC9kZWlyMTQ3LTU1Mzk5YzJjLTIyMjktNDRkYS05MjVjLWEwMjQ1ZGJmZjRlYS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.Db-tjGE_aO3Kc5m2k8CJ-cDUjbPHk82hKa6yjD0z3Lc);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+header{
+    text-align: center;
+    font-size: 45px;
+    padding: 5px;
+    color: white;
+    background-color: black;
+}
+
+.container{
+    position: relative;
+    width: 320px;
+    margin: 50px auto 100px auto;
+    perspective:1000px;
+}
+
+.carrossel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation:rotate360 40s infinite forwards;
+}
+
+.imagem{
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    width: 300px;
+    height: 187px;
+    background-size: cover;
+    display: flex;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.imagem span{
+    font-size: 1.2em;
+    margin: auto;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: -30px;
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.imagem:nth-child(1):hover{
+    box-shadow: 0px 0px 20px white;
+    transition: all 1s cubic-bezier(0.175, 3, 0.32, 1.275);
+    transform: rotateY(0deg) translateZ(450px);
+}
+.imagem:nth-child(2):hover{
+    box-shadow: 0px 0px 20px white;
+    transition: all 1s cubic-bezier(0.175, 3, 0.32, 1.275);
+    transform: rotateY(40deg) translateZ(450px);
+}
+.imagem:nth-child(3):hover{
+    box-shadow: 0px 0px 20px white;
+    transition: all 1s cubic-bezier(0.175, 3, 0.32, 1.275);
+    transform: rotateY(80deg) translateZ(450px);
+}
+.imagem:nth-child(4):hover{
+    box-shadow: 0px 0px 20px white;
+    transition: all 1s cubic-bezier(0.175, 3, 0.32, 1.275);
+    transform: rotateY(120deg) translateZ(450px);
+}
+.imagem:nth-child(5):hover{
+    box-shadow: 0px 0px 20px white;
+    transition: all 1s cubic-bezier(0.175, 3, 0.32, 1.275);
+    transform: rotateY(160deg) translateZ(450px);
+}
+.imagem:nth-child(6):hover{
+    box-shadow: 0px 0px 20px white;
+    transition: all 1s cubic-bezier(0.175, 3, 0.32, 1.275);
+    transform: rotateY(200deg) translateZ(450px);
+}
+.imagem:nth-child(7):hover{
+    box-shadow: 0px 0px 20px white;
+    transition: all 1s cubic-bezier(0.175, 3, 0.32, 1.275);
+    transform: rotateY(240deg) translateZ(450px);
+}
+.imagem:nth-child(8):hover{
+    box-shadow: 0px 0px 20px white;
+    transition: all 1s cubic-bezier(0.175, 3, 0.32, 1.275);
+    transform: rotateY(280deg) translateZ(450px);
+}
+.imagem:nth-child(9):hover{
+    box-shadow: 0px 0px 20px white;
+    transition: all 1s cubic-bezier(0.175, 3, 0.32, 1.275);
+    transform: rotateY(320deg) translateZ(450px);
+}
+
+.imagem:nth-child(1){
+    background-image: url(https://www.adrenaline.com.br/wp-content/plugins/seox-image-magick/imagick_convert.php?width=910&height=568&format=webp&quality=91&imagick=uploads.adrenaline.com.br/2023/09/Minecraft-Live-2023-Evento-Agendado-912x569.jpeg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2){
+    background-image: url(https://s2-techtudo.glbimg.com/H1h6C_efs6KWnvnMGma7S__Fiu4=/0x0:620x388/984x0/smart/filters:strip_icc/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/7/A/pHdFZTTYaBxeuHzTTuAw/2013-01-21-minecraft-construcao-kings-landing-pc-gamer.jpg);
+    transform: rotateY(40deg) translateZ(430px);
+}
+.imagem:nth-child(3){
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuQCcb0LQdUmvi_UhxsIbuBUzEGvMvtBoDliIIIUnpjt5TqjLhN_D2juDP5aMnDlfVMZI&usqp=CAU);
+    transform: rotateY(80deg) translateZ(430px);
+}
+.imagem:nth-child(4){
+    background-image: url(https://static1-br.millenium.gg/articles/4/33/24/@/79743-vignette-enchantement-orig-1-article_m-1.png);
+    transform: rotateY(120deg) translateZ(430px);
+}
+.imagem:nth-child(5){
+    background-image: url(https://www.pwrdown.com/wp-content/uploads/2020/09/Panda.jpg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+.imagem:nth-child(6){
+    background-image: url(https://pm1.aminoapps.com/7519/a00e3ed35109efd97d068394d4cd5322f48a995br1-1244-737v2_uhq.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+.imagem:nth-child(7){
+    background-image: url(https://s2-techtudo.glbimg.com/b_PSkooSxUww_HU8IBFQWgjI3TI=/0x0:1200x675/984x0/smart/filters:strip_icc/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2022/t/c/0c2a7UQEGOYFGg3dhTxQ/minecraft-the-wild-update-atualizacao-warden.jpg);
+    transform: rotateY(240deg) translateZ(430px);
+}
+.imagem:nth-child(8){
+    background-image: url(https://i.ytimg.com/vi/fUIwWx3H8jU/maxresdefault.jpg);
+    transform: rotateY(280deg) translateZ(430px);
+}
+.imagem:nth-child(9){
+    background-image: url(https://cdn.ligadosgames.com/imagens/servidores-de-minecraft-og.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
+.imagem:nth-child(10){
+    background-image: url(https://64.media.tumblr.com/eaa33f731e2ac2df31d2649d78768a88/tumblr_inline_pnacj4OI1v1wuj82d_250.gif);
+    transform: rotateY(0deg) translateZ(1000px);
+    height: 500px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+
+@keyframes rotate360 {
+    from{
+        transform:rotateY(0deg) ;
+    }
+
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
